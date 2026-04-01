@@ -1,0 +1,31 @@
+# Systemd Service File for Provider OSINT Bot
+# Location: /etc/systemd/system/zexx-bot.service
+
+[Unit]
+Description=Provider_OSINT Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/zexx_bot
+ExecStart=/usr/bin/python3 /root/provider_bot/bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+# ==========================================
+# INSTALLATION COMMANDS:
+# ==========================================
+# 1. Copy this file to /etc/systemd/system/provider-bot.service
+# 2. sudo systemctl daemon-reload
+# 3. sudo systemctl enable provider-bot
+# 4. sudo systemctl start provider-bot
+#
+# Useful commands:
+# sudo systemctl status provider-bot  - Check status
+# sudo systemctl restart provider-bot - Restart bot
+# sudo systemctl stop provider-bot    - Stop bot
+# journalctl -u debax-bot -f       - View logs
