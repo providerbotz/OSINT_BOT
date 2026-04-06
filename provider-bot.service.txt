@@ -28,4 +28,4 @@ WantedBy=multi-user.target
 # sudo systemctl status provider-bot  - Check status
 # sudo systemctl restart provider-bot - Restart bot
 # sudo systemctl stop provider-bot    - Stop bot
-# journalctl -u debax-bot -f       - View logs
+# journalctl -u provider-bot -f       - View logs
