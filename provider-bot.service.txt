@@ -1,5 +1,5 @@
 # Systemd Service File for Provider OSINT Bot
-# Location: /etc/systemd/system/zexx-bot.service
+# Location: /etc/systemd/system/provider-bot.service
 
 [Unit]
 Description=Provider_OSINT Telegram Bot
@@ -8,7 +8,7 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/root/zexx_bot
+WorkingDirectory=/root/provider_bot
 ExecStart=/usr/bin/python3 /root/provider_bot/bot.py
 Restart=always
 RestartSec=10
