@@ -5,18 +5,19 @@
 # ==========================================
 
 # Bot Token
-BOT_TOKEN = "ENTER_BOT_TOKEN "
+BOT_TOKEN = "ENTER_BOT_TOKEN" #DONT PASTE HERE 
 
 # Admin User ID
-ADMIN_ID =  #YOUR CHAT ID HERE
+ADMIN_ID = 7931847651 
 
 # Support Contact
-SUPPORT_USERNAME = "@" // YOUR USERNAME/ANY FRIEND USERNAME 
+SUPPORT_USERNAME = "@" # YOUR USERNAME/ANY FRIEND USERNAME 
 
 # ==========================================
 # API ENDPOINTS - ENTER UR API IF U DONT NEED THIS 
 # ==========================================
 
+# PASTE YOUR ACTUAL APIS
 API_ENDPOINTS = {
 
     # 📱 Indian Number Info
